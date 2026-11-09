@@ -1,17 +1,18 @@
 name: "build-test-dev"
-on:
-  pull_request:
-    branches:
-      - dev
-    paths-ignore:
-      - "*.md"
-  push:
-    branches:
-      - dev
-    paths-ignore:
-      - "*.md"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - dev
+#     paths-ignore:
+#       - "*.md"
+#   push:
+#     branches:
+#       - dev
+#     paths-ignore:
+#       - "*.md"
+#   workflow_dispatch:
+# 
 jobs:
   build:
     strategy:
